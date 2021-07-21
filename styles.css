@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #000;
+}
+.blockTitle {
+	margin: 40px auto 0 auto;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.blockSubTitle {
+	margin: 0 auto 0 auto;
+	width: 600px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Archio', sans-serif;
+	color: #c8c8c8;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	width: 100%;
+}
+.logo {
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	margin-left: 60px;
+	height: 50px;
+	width: 160px;
+	text-align: center;
+	background: #00ff66;
+	/* ANIMATION */
+	animation: logoAnimation 0.5s;
+	animation-fill-mode: forwards;
+}
+.logoText {
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Archivo', sans-serif;
+	opacity: 0;
+	/* ANIMATION */
+	animation: logoTextAnimation 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+.logoSecondText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto 20px;
+	height: 50px;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Archivo', sans-serif;
+	color: #fff;
+	opacity: 0;
+	/* ANIMATION */
+	animation: logoSecondTextAnimation 0.35s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes logoAnimation {
+	0% {
+		transform: translateY(-100px);
+		margin-left: 170px;
+		width: 50px;
+		height: 50px;
+	}
+	50% {
+		margin-left: 170px;
+		width: 50px;
+		height: 50px;
+	}
+	100% {
+		margin-left: 60px;
+		width: 160px;
+	}
+}
+@keyframes logoTextAnimation {
+	0% {
+		transform: translateY(100px);
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes logoSecondTextAnimation {
+	0% {
+		opacity: 0;
+		margin-left: 100px;
+	}
+	100% {
+		opacity: 1;
+		margin-left: 20px;
+	}
+}
+
+.menu {
+	display: flex;
+	margin-right: 40px;
+	margin-left: auto;
+	height: 50px;
+	font-family: 'Archivo', sans-serif;
+}
+.menuEl {
+	margin: auto 40px;
+	padding: 2px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.menuEl:hover {
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 92%;
+}
+.headerBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	width: 100%;
+	animation: headerTextAnimation 0.5s;
+	animation-delay: 1.35s;
+	animation-fill-mode: forwards; 
+}
+.headerTitle {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	font-weight: 800;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.headerSubTitle {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+	font-family: 'Archio', sans-serif;
+	color: #00ff66;
+}
+hr.headerLine {
+	margin: 20px auto;
+	width: 150px;
+	height: 2px;
+	background: #fff;
+}
+.headerText {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.contactBtn {
+	margin: 20px auto 0 auto;
+	width: 150px;
+	height: 50px;
+
+	border: none;
+	outline: none;
+	background: #fff;
+
+	font-size: 18px;
+	font-weight: 800;
+	font-family: 'Archio', sans-serif;
+	transition: 0.3s;
+}
+.contactBtn:hover {
+	cursor: pointer;
+	background: #00ff66;
+}
+
+@keyframes headerTextAnimation {
+	0% {
+		opacity: 0;
+		margin-top: 300px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.aboutme {
+	display: flex;
+	flex-direction: column;
+}
+.aboutmeBlock {
+	display: flex;
+	margin: 40px auto;
+	width: 80%;
+}
+.aboutmeTextBlock {
+	width: 50%;
+}
+.aboutmeTextBlock > p {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.skillsBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 50%;
+}
+.skill {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.progressBar {
+	margin: auto 0 auto 30px;
+	width: 70%;
+	height: 10px;
+	background: #262626;
+}
+.progressComplete {
+	background: #00ff66;
+}
+.progressComplete#html {
+	width: 80%;
+	height: 10px;
+}
+.progressComplete#css {
+	width: 65%;
+	height: 10px;
+}
+.progressComplete#js {
+	width: 20%;
+	height: 10px;
+}
+.skillLang, .progressProcents {
+	margin: auto 0 auto 30px;
+	width: 100px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+}
+.cardsBlock {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 10%;
+}
+
+/* АНИМАЦИЯ КАРТОЧЕК */
+
+.card {
+	margin: 40px;
+	width: 300px;
+	height: 500px;
+	background: #000;
+	transition: 0.2s ease;
+}
+.card:hover {
+	cursor: pointer;
+	margin-top: 20px;
+	background: #a600ff;
+}
+.cardsBlock div:nth-child(1):hover {
+	background: #a600ff;
+}
+.cardsBlock div:nth-child(2):hover {
+	background: #00ff66;
+}
+.cardsBlock div:nth-child(3):hover {
+	background: #ff0041;
+}
+.cardsBlock div:nth-child(4):hover {
+	background: #0063ff;
+}
+
+.cardsBlock div:nth-child(n):hover p {
+	color: #fff;
+	animation: cardTextAnimation 0.2s;
+	animation-delay: 0.2s;
+	animation-fill-mode:  forwards;
+}
+
+@keyframes cardTextAnimation {
+	0% {
+		color: #fff;
+	}
+	100% {
+		color: #000;
+	}
+}
+.card:hover p {
+	color: #000;
+	transition: 0.3s ease-in-out;
+}
+.cardTitle {
+	padding: 20px 20px 10px 20px;
+	line-height: 30px;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.cardText {
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.portfolio {
+	display: flex;
+	flex-direction: column;
+}
+.portfolio > p.blockTitle {
+	margin: 40px auto 0 auto;
+}
+.contactFormBlock {
+	display: flex;
+	flex-direction: column;
+}
+.backForm {
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto;
+	width: 60%;
+}
+.mail, .name {
+	margin: 20px auto;
+	padding: 20px 20px;
+	width: 60%;
+	height: 50px;
+	border: none;
+	outline: 2px solid #fff;
+	background: #000;
+
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.message {
+	margin: 20px auto;
+	padding: 20px;
+	width: 60%;
+	height: 200px;
+	border: none;
+	outline: 2px solid #fff;
+	background: #000;
+
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Archio', sans-serif;
+	color: #fff;
+}
+.submitBtn {
+	margin: 20px auto 0 auto;
+	width: 150px;
+	height: 50px;
+
+	border: none;
+	outline: none;
+	background: #fff;
+
+	font-size: 18px;
+	font-weight: 800;
+	font-family: 'Archio', sans-serif;
+	transition: 0.3s;
+}
+.submitBtn:hover {
+	cursor: pointer;
+	background: #00ff66;
+}
+
+
+/* xs - устройства (до 576px) */
+/* CSS для ширины, которая меньше 575px (включительно) */
+
+/* sm-устройства (больше или равно 576px) */
+@media (min-width: 576px) {
+  /* CSS для: 576px <= ширины <= 767px */
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 992px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1200px) {
+  /* CSS для: ширины >= 1200px */
+}
+
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<348914384>&text=<text>

@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/splide.min.css">
+	<link rel="stylesheet" type="text/css" href="css/splide-default.min.css">
+	<title>ssad.exe</title>
+</head>
+<body>
+	<div class="nav">
+		<div class="logo">
+			<p class="logoText">ssad.exe</p>
+		</div>
+		<p class="logoSecondText">developer</p>
+		<div class="menu">
+			<a class="menuEl" href="#aboutme">Биография</a>
+			<a class="menuEl" href="#features">Преимущества</a>
+			<a class="menuEl" href="#contaсtForm">Обратная связь</a>
+			<a class="menuEl" href="#">Element</a>
+		</div>
+	</div>
+	<div class="header">
+		<div class="headerBlock">
+			<p class="headerTitle">ssad.exe developer</p>
+			<p class="headerSubTitle">начинающий Front End разработчик</p>
+			<hr class="headerLine">
+			<p class="headerText">На этом сайте вы сможете узнать немного информации обо мне, о моих навыках, а так же посмотреть мои работы в портфолио</p>
+			<button class="contactBtn">Связаться</button>
+		</div>
+	</div>
+	<div class="aboutme" id="aboutme">
+		<p class="blockTitle">Немного о себе</p>
+		<p class="blockSubTitle">Предлагаю немного ознакомиться с моей биографией, и историей становления меня как Front End разработчика.</p>
+		<div class="aboutmeBlock">
+			<div class="aboutmeTextBlock">
+				<p>Програмированием я начал увлекаться еще в школе, на уроках информатики. Тогда мы проходили крайне примитивные вещи, такие как: создание сайта в блокноте, рограмирование на Pascal и прочие вещи. Именно в то время у меня появился огромный интерес к этому делу. Я очень хотел понимать, как это все работает, и конечно же научиться это делать самому. Постепенно стал изучать html, css, java script. По началу конечно же ничего не было понтяно, но как говорится: "Нет ничего невозможного". Спустя множество бессоных ночей и упорной работы, я создал данный сайт, на котором вы моожете ознакомиться с моей деятелностью.</p>
+			</div>
+			<div class="skillsBlock">
+				<div class="skill">
+					<p class="skillLang">HTML</p><div class="progressBar"><div class="progressComplete" id="html"></div></div><p class="progressProcents">80%</p>
+				</div>
+				<div class="skill">
+					<p class="skillLang">CSS</p><div class="progressBar"><div class="progressComplete" id="css"></div></div><p class="progressProcents">65%</p>
+				</div>
+				<div class="skill">
+					<p class="skillLang">JavaScript</p><div class="progressBar"><div class="progressComplete" id="js"></div></div><p class="progressProcents">20%</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="features" id="features">
+		<p class="blockTitle">Особенности работы</p>
+		<p class="blockSubTitle">В своей работе я применяю самые современные и технологичные решения, которые являются наиболее практичными и удобными.</p>
+		<div class="cardsBlock">
+			<div class="card">
+				<p class="cardTitle">Адаптивная <span class="violet">верстка</span></p>
+				<p class="cardText">Адаптивная вёрстка меняет дизайн страницы в зависимости от поведения пользователя, платформы, размера экрана и ориентации девайса и является неотъемлемой частью современной веб-разработки. Она позволяет существенно экономить и не отрисовывать новый дизайн для каждого разрешения, а менять размеры и расположение отдельных элементов.</p>
+			</div>
+			<div class="card">
+				<p class="cardTitle">Сторонние библиотеки</p>
+				<p class="cardText">Использование сторонних библиотек позволяет реализовывать любые задумки заказчика. Возможнсть реализовать любую анимацию и графику, добавить интерактивные элементы, и упростить взаймодействие пользователя с сайтом. С помощью этого ваш сайт будет приносить эстетическое удовольствие посетителям.</p>
+			</div>
+			<div class="card">
+				<p class="cardTitle">Чистый<br>код</p>
+				<p class="cardText">Я пишу только чистый код, где нет ничего лишнего. Код максимально понятен и конструктивен. При необходимости можно закоментировать практически каждую строку, чтобы в дальнейшем при изменение файлов, заказчик смог сам разобраться в структуре сайта.</p>
+			</div>
+			<div class="card">
+				<p class="cardTitle">Современные решения</p>
+				<p class="cardText">Использование различных фреймворков и технологий верстки делает ваш сайт максимально эффективным и современным, с технической точки зрения. Такие решения всегда привлекают пользователей. Ваш сайт никогда не останется без внимания.</p>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio" id="portfolio">
+		<p class="blockTitle">Портфолио</p>
+		<p class="blockSubTitle">Ниже вы сможете ознакомиться с проектами, над которыми я работал.</p>
+		<div class="slider">
+			<img src="img/header.jpg" alt="">
+		</div>
+	</div>
+	<div class="contactFormBlock" id="contaсtForm">
+		<p class="blockTitle">Свяжитесь со мной</p>
+		<p class="blockSubTitle">Если у вас есть какие-либо вопросы, или вы желаете сделать заказ, то можете заполнить эту форму, и я обязательно вам отвечу.</p>
+		<form action="form.php" method="POST" class="backForm">
+			<input type="e-mail" name="mail" placeholder="Ваш E-mail" class="mail">
+			<input type="text" name="name" placeholder="Ваше имя" class="name">
+			<textarea name="message" placeholder="Ваше сообщение" class="message"></textarea>
+			<button type="submit" class="submitBtn">Отправить</button>
+		</form>
+	</div>
+	<!--<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/splide.min.js"></script>-->
+</body>
+</html>
